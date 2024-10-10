@@ -1,0 +1,278 @@
+.header {
+    background-color: $header-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 16px 0;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    &__logo {
+        padding: 14.5px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        background-color: $logo-bg;
+        font-size: 20px;
+        line-height: 25.6px;
+        text-transform: uppercase;   
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $blue;
+        }     
+    }
+    &__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+    &__nav-link {
+        color: $link;
+        font-size: 16px;
+        line-height: 20.5px;
+        padding: 12px 24px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: $link-bg;
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $blue;
+        } 
+    }
+    &__button {
+        font-size: 16px;
+        line-height: 20.5px;
+        font-weight: 600;
+        padding: 14px 32px;
+        border-radius: 16px;
+        border: none;
+        outline: none;
+        color: $link;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        &--green {
+            background-color: $green;
+        }
+        &--orange {
+            background-color: $orange;
+        }
+        &:hover {
+            background-color: $logo-bg;
+        }
+    }
+    &__language-options {
+        &.hidden {
+           display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__lang-switcher {
+        position: relative;
+        cursor: pointer;
+    }
+
+    &__selected-language {
+        display: flex;
+        align-items: center;
+        padding: 12px 24px;
+        background-color: $link-bg;
+        border-radius: 16px;
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $blue;
+        }
+
+        & img[alt="arrow"] {
+            transition: transform 0.3s;
+        }
+    }
+    &__language-name {
+        margin-left: 10px;
+        margin-right: 4px;
+        font-size: 16px;
+        line-height: 20.5px;
+        font-weight: 600;
+        color: $white;
+    }
+
+    &__lang-switcher.active img[alt="arrow"] {
+        transform: rotate(180deg);
+    }
+
+    &__language-options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        border: 1px solid &link;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        z-index: 10;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px 16px;
+        &.hidden {
+            display: none;
+        }
+    }
+    &__language-option {
+       display: flex;
+       flex-direction: row;
+       gap: 8px;
+       color: $text;
+    }
+    &__burger {
+        display: none;
+    }
+
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 400px;
+    height: 500px;
+    background-color: $header-bg;
+    border-radius: 6px 0 0 6px;
+    position: fixed;
+    top: 80px;
+    right: -150%;
+    padding: 20px;
+    z-index: 50;
+    transition: all 0.3s ease;
+    &.open {
+        right: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .header {
+        &__container {
+            padding: 0 16px;
+        }
+        &__nav {
+            display: none;
+        }
+        &__burger {
+            
+            width: 30px;
+            height: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            &-line {
+                width: 100%;
+                height: 2px;
+                background-color: white;
+                transition: all 0.3s ease;
+              }
+              
+              &.active .header__burger-line:nth-child(1) {
+                transform: translateY(10px) rotate(45deg);
+              }
+              &.active .header__burger-line:nth-child(2) {
+                opacity: 0;
+              }
+              
+              &.active .header__burger-line:nth-child(3) {
+                transform: translateY(-18px) rotate(-45deg);
+              }
+              &__btns {
+                display: none;
+              }
+            }
+        &__nav-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            & li {
+                width: 100%;
+            }
+        }
+        &__nav-link {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .burger__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .burger__btn {
+        width: 100%;
+    }
+    .burger {
+        height: 500px;
+        top: 52px;
+    }
+    .header {
+        padding: 6px 0;
+        &__button.dn-btn {
+            display: none;
+        }
+        &__logo {
+            padding: 8px 16px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__selected-language {
+
+            padding: 8px 16px;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .header {
+        &__container {
+            padding: 0 4px;
+        }
+        &__button {
+            width: 100%;
+        }
+    }
+    .burger {
+        width: 100%;
+        height: calc(100vh - 52px);
+    }
+}

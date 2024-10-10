@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+    <header class="header">
+            <div class="header__container">
+                <div class="header__box">
+                    <a href="index.html" class="header__logo">
+                        LOGO
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li>
+                                <a href="#" class="header__nav-link">
+                                    <img src="img/nav-icon1.svg" alt="nav icon">
+                                    Bonuses
+                                </a>
+                            </li>
+                            <li> 
+                                <a href="#" class="header__nav-link">
+                                <img src="img/nav-icon2.svg" alt="nav icon">
+                                APP
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__nav-link">
+                                    LIVE
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__nav-link">
+                                    SPORTS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="header__nav-link">
+                                    MORE
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__actions">
+                    <div class="header__lang-switcher">
+                        <div class="header__selected-language">
+                            <img src="img/flag.png" alt="flag"  width="24">
+                            <span class="header__language-name">AT</span>
+                            <img src="img/arrow-down.svg" alt="arrow" width="24" >
+                        </div>
+                        <div class="header__language-options hidden">
+                            <div class="header__language-option">
+                                <img src="img/flag.png" alt="flag"  width="24">
+                                <span class="text">EN</span>
+                            </div>
+                            <div class="header__language-option">
+                                <img src="img/flag.png" alt="flag"  width="24">
+                                <span class="text">UA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="header__button header__button--orange dn-btn">
+                        Sign up
+                    </button>
+                    <button class="header__button header__button--green dn-btn">
+                        log in
+                    </button>
+                    <button class="header__burger">
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                        <span class="header__burger-line"></span>
+                    </button>
+                </div>
+            </div>
+    </header>
+
+    <main class="main">
+        <div class="content">
+          <section class="mobile-app section">
+            <div class="mobile-app__content">
+                <p class="mobile-app__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. </p>
+                <button class="mobile-app__button">
+                    <img src="img/apple-icon.svg" alt="icon" width="24">
+                    <img src="img/android-icon.svg" alt="icon" width="24">
+                    Mobile app
+                </button>
+            </div>
+          </section>
+          <section class="hero section">
+            <img src="img/hero.webp" alt="bg img" class="hero__img">
+            <div class="hero__rating">
+                <p class="hero__rating-text">96/100</p>
+                <img src="img/stars.svg" alt="icon rating" class="hero__rating-icon">
+            </div>
+            <h1 class="hero__title title">Lorem ipsum dolor sit amet, consectetur adipiscing </h1>
+            <div class="hero__action">
+                <button class="button hero__button">Sign up</button>
+                <p class="hero__text">18+ T&C apply |  Play Responsibly</p>
+            </div>
+        </section>
+        <section class="tabs section">
+            <ul class="tabs__list">
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link">
+                        <img src="img/tab1.svg" alt="icon" width="32" height="32">
+                        <strong>PLAY <br>REWIEW</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link"> 
+                        <img src="img/tab2.svg" alt="icon" width="32" height="32">
+                        <strong>CASINO BONUSES</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link">                        
+                        <img src="img/tab3.svg" alt="icon" width="32" height="32">
+                        <strong>CASINO BONUSES</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link">
+                        <img src="img/tab4.svg" alt="icon" width="32" height="32">
+                        <strong>CASINO APP</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link"> 
+                        <img src="img/tab5.svg" alt="icon" width="32" height="32">
+                        <strong>CASINO
+                            MOBILE</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link">                        
+                        <img src="img/tab6.svg" alt="icon" width="32" height="32">
+                        <strong>HOW TO
+                            SIGN&nbsp;UP</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link">
+                        <img src="img/tab7.svg" alt="icon" width="32" height="32">
+                        <strong>CASINO
+                            REVIEW</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link tabs__link--big"> 
+                        <img src="img/tab8.svg" alt="icon" width="32" height="32">
+                        <strong>PLAYER REVIEWS <br>(4)</strong>
+                    </a>
+                </li>
+                <li class="tabs__item">
+                    <a href="#" class="tabs__link tabs__link--little">                        
+                        <img src="img/tab9.svg" alt="icon" width="32" height="32">
+                        <strong>COMPLAINTS</strong>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="bonus section">
+            <img src="img/bonus.webp" alt="bg img" class="bonus__img">
+            <div class="bonus__info">
+                <h2 class="bonus__title title">100% BONUS UP TO 300€</h2>
+                <p class="bonus__text">+100 free spins on your first deposit</p>
+                <button class="button">Get a bonus now</button>
+            </div>
+        </section>
+        <section class="up section">
+            <h2 class="up__title title-big">100% up to 300€</h2>
+            <p class="up__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+        </section>
+        <section class="rating section">
+            <ul class="rating__list">
+                <li class="rating__item">
+                    <p class="rating__item-text">Bonus offer</p>
+                    <div class="rating__item-box">
+                        <img src="img/rait9.svg" alt="icon rating"  class="rating__item-box-img">
+                        <p  class="rating__item-box-text">9/10</p>
+                    </div>
+                </li>
+                <li class="rating__item">
+                    <p class="rating__item-text">BETTING VARIETY</p>
+                    <div class="rating__item-box">
+                        <img src="img/rait8.svg" alt="icon rating"  class="rating__item-box-img">
+                        <p  class="rating__item-box-text">8/10</p>
+                    </div>
+                </li>
+                <li class="rating__item">
+                    <p class="rating__item-text">mobile experience</p>
+                    <div class="rating__item-box">
+                        <img src="img/rait7.svg" alt="icon rating"  class="rating__item-box-img">
+                        <p  class="rating__item-box-text">7/10</p>
+                    </div>
+                </li>
+                <li class="rating__item">
+                    <p class="rating__item-text">payment options</p>
+                    <div class="rating__item-box">
+                        <img src="img/rait9.svg" alt="icon rating"  class="rating__item-box-img">
+                        <p  class="rating__item-box-text">9/10</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="facts section">
+            <h2 class="facts__title title">quick facts</h2>
+            <div class="facts__list">
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact1.png" alt="icon" width="24" height="28">
+                        Website
+                    </p>
+                    <p class="facts__item-right">casinoname.com</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact2.png" alt="icon" width="24" height="28">
+                        Game Types:
+                    </p>
+                    <p class="facts__item-right ">Sportsbook, Casino, Live Games, Live Casino</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact3.png" alt="icon" width="24" height="28">
+                        Deposit methods:
+                    </p>
+                    <p class="facts__item-right ">Visa, Masterscard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin, Bank Transfer, Entropay, ecoPayz, Neosurf</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact4.png" alt="icon" width="24" height="28">
+                        Withdrawal methods:
+                    </p>
+                    <p class="facts__item-right ">Visa, Mastercard, Maestro, PayPal, Skrill, Neteller, Trustly, Bitcoin, Bank Transfer, Entropay, ecoPayz, Neosurf</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact5.png" alt="icon" width="24" height="28">
+                        Betting functions:
+                    </p>
+                    <p class="facts__item-right ">Live betting, cash out</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact6.png" alt="icon" width="24" height="28">
+                        Casino game types:
+                    </p>
+                    <p class="facts__item-right ">Slots, table games</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact7.png" alt="icon" width="24" height="28">
+                        Casino provider:
+                    </p>
+                    <p class="facts__item-right ">1X2 Network, Amatic Industries, Apollo Games, Asia Gaming and more</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact8.png" alt="icon" width="24" height="28">
+                        Apps:
+                    </p>
+                    <p class="facts__item-right ">iPhone, Android</p>
+                </div>
+                <div class="facts__item">
+                    <p class="facts__item-left ">
+                        <img src="img/fact9.png" alt="icon" width="24" height="28">
+                        Founded Year:
+                    </p>
+                    <p class="facts__item-right ">2017</p>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section">
+            <h2 class="reviews__title title-big">SPORTSBOOK REVIEW</h2>
+            <p class="reviews__text text reviews__text--mbm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+            <p class="reviews__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+            <h3 class="reviews__subtitle title">LINEUP OF THE SPORTS</h3>
+            <p class="reviews__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+            <h3 class="reviews__subtitle title">BETTING TYPES</h3>
+            <p class="reviews__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+            <h3 class="reviews__subtitle title">LIVE BETTING</h3>
+            <ul class="reviews__mark-list">
+                <li class="text reviews__mark-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget.
+                </li>
+                <li class="text reviews__mark-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li class="text reviews__mark-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus.
+                </li>
+            </ul>
+            <ol class="reviews__number-list">
+                <li class="text reviews__number-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget.
+                </li>
+                <li class="text reviews__number-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li class="text reviews__number-list-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus.
+                </li>
+            </ol>
+            <p class="reviews__text text reviews__text--mbl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+            <button class="header__button header__button--orange">Sign up</button>
+        </section>
+        <section class="slider section">
+            <h2 class="slider__title title">what other players have to say</h2>
+            <div class="swiper swiper-review">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__slide">
+                        <img src="img/slide1.webp" alt="photo" class="slider__slide-img">
+                        <div class="slider__slide-content">
+                            <div class="slider__slide-content-info">
+                                <h3 class="slider__slide-content-title">joshua</h3>
+                                <div class="slider__slide-content-stars">
+                                    <img src="img/star-rev.svg" alt="stars" width="16" height="16">
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__slide">
+                        <img src="img/slide2.webp" alt="photo" class="slider__slide-img">
+                        <div class="slider__slide-content">
+                            <div class="slider__slide-content-info">
+                                <h3 class="slider__slide-content-title">mark</h3>
+                                <div class="slider__slide-content-stars">
+                                    <img src="img/star-rev.svg" alt="stars" width="16" height="16">
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__slide">
+                        <img src="img/slide1.webp" alt="photo" class="slider__slide-img">
+                        <div class="slider__slide-content">
+                            <div class="slider__slide-content-info">
+                                <h3 class="slider__slide-content-title">joshua</h3>
+                                <div class="slider__slide-content-stars">
+                                    <img src="img/star-rev.svg" alt="stars" width="16" height="16">
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__slide">
+                        <img src="img/slide2.webp" alt="photo" class="slider__slide-img">
+                        <div class="slider__slide-content">
+                            <div class="slider__slide-content-info">
+                                <h3 class="slider__slide-content-title">mark</h3>
+                                <div class="slider__slide-content-stars">
+                                    <img src="img/star-rev.svg" alt="stars" width="16" height="16">
+                                    4.5
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget.</p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+        </section>
+        <section class="support section">
+            <img src="img/support.webp" alt="bg img" class="support__img">
+            <div class="support__content">
+                <h2 class="support__title title-big">Customer Support</h2>
+                <p class="support__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+                <div class="support__btns">
+                    <a href="#" class="support__btn">
+                        <img src="img/chat.svg" alt="icon" width="24" height="24">
+                        chat
+                    </a>
+                    <a href="tel:+" class="support__btn"><img src="img/phone.svg" alt="icon" width="24" height="24">phone</a>
+                    <a href="mailto:support-en@22bet.com" class="support__btn"><img src="img/mail.svg" alt="icon" width="24" height="24">Email</a>
+                </div>
+                <div class="support__info">
+                    <div class="support__info-item">
+                        <div class="support__info-item-left">
+                            <img src="img/mail.svg" alt="icon" width="24" height="24">
+                            <p class="text">Email Technical Support</p>
+                        </div>
+                        <div class="support__info-item-right">
+                            <a href="mailto:support-en@22bet.com" class="text support__info-item-link">example@mail.com</a>
+                        </div>
+                    </div>
+                    <div class="support__info-item">
+                        <div class="support__info-item-left">
+                            <img src="img/mail.svg" alt="icon" width="24" height="24">
+                            <p class="text">Online Partnership Queries</p>
+                        </div>
+                        <div class="support__info-item-right">
+                            <a href="mailto:support-en@22bet.com" class="text support__info-item-link">examplesupport@mail.com</a>
+                        </div>
+                    </div>
+                    <div class="support__info-item">
+                        <div class="support__info-item-left">
+                            <img src="img/mail.svg" alt="icon" width="24" height="24">
+                            <p class="text">Live chat</p>
+                        </div>
+                        <div class="support__info-item-right">
+                            <a href="#" class="text">Available</a>
+                        </div>
+                    </div>
+                    <div class="support__info-item">
+                            <div class="support__info-item-left">
+                                <img src="img/location.svg" alt="icon" width="24" height="24">
+                                <p class="text">Address</p>
+                            </div>
+                            <div class="support__info-item-right">
+                                <p class="text">Broadway, 12, Lyric building, block 1, 1st floor, Flat/Office 15, <br>29000, Oslo, Norway</p>
+                            </div>
+                    </div>
+                    <div class="support__info-item">
+                            <div class="support__info-item-left">
+                                <img src="img/google-maps.svg" alt="icon" width="24" height="24">
+                                <p class="text">Google Maps</p>
+                            </div>
+                            <div class="support__info-item-right">
+                                <a href="http://google.com" target="_blank" rel="noopener noreferrer" class="text support__info-item-link support__info-item-link--bold">Click here</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq section">
+            <h2 class="faq__title title-big">faq</h2>
+            <div class="faq__accordion">
+                <div class="accordion-container">
+                  <div class="ac">
+                    <h2 class="ac-header">
+                      <button
+                        type="button"
+                        class="ac-trigger"
+                      >
+                      Question
+                      </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                    </div>
+                  </div>
+                  <div class="ac">
+                    <h2 class="ac-header">
+                      <button
+                        type="button"
+                        class="ac-trigger"
+                      >
+                      Question
+                      </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                    </div>
+                  </div>
+                  <div class="ac">
+                    <h2 class="ac-header">
+                      <button
+                        type="button"
+                        class="ac-trigger"
+                      >
+                      Question
+                      </button>
+                    </h2>
+                    <div class="ac-panel">
+                        <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer section">
+            <div class="footer__container">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+                <img src="img/footer-img.webp" alt="footer img" class="footer__container-img" width="85" height="85">
+            </div>
+            <p class="text">Gambling can be addictive. Play responsibly.</p>
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logo-small">
+                    LOGO
+                </a>
+                <a href="index.html" class="footer__logo-small footer__logo-big">
+                    LOGO
+                </a>
+    
+            </div>
+        </footer>
+        </div>
+        <aside class="sidebar">
+          <div class="aside__content">
+            <div class="aside__content-up">
+                <div class="aside__content-up-header">
+                    <a href="#" class="aside__content-up-header-link">
+                        <strong class="aside__content-up-header-play">
+                            <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.636373 15C0.467596 15 0.305732 14.9342 0.186389 14.8169C0.0670463 14.6997 0 14.5408 0 14.375V0.624898C1.89327e-05 0.51629 0.0288536 0.409562 0.0836619 0.315233C0.13847 0.220904 0.21736 0.14223 0.312556 0.0869651C0.407753 0.0317006 0.515969 0.00175304 0.626538 7.46521e-05C0.737108 -0.00160373 0.846215 0.025045 0.943104 0.0773938L13.6706 6.95244C13.7703 7.0064 13.8535 7.08566 13.9115 7.18197C13.9694 7.27827 14 7.38808 14 7.49995C14 7.61181 13.9694 7.72163 13.9115 7.81793C13.8535 7.91423 13.7703 7.9935 13.6706 8.04745L0.943104 14.9225C0.849144 14.9733 0.743633 15 0.636373 15Z" fill="#F04C44"/>
+                            </svg>
+                        </strong>
+                        <p class="text">LIVE EVENTS (143)</p>
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.636373 15C0.467596 15 0.305732 14.9342 0.186389 14.8169C0.0670463 14.6997 0 14.5408 0 14.375V0.624898C1.89327e-05 0.51629 0.0288536 0.409562 0.0836619 0.315233C0.13847 0.220904 0.21736 0.14223 0.312556 0.0869651C0.407753 0.0317006 0.515969 0.00175304 0.626538 7.46521e-05C0.737108 -0.00160373 0.846215 0.025045 0.943104 0.0773938L13.6706 6.95244C13.7703 7.0064 13.8535 7.08566 13.9115 7.18197C13.9694 7.27827 14 7.38808 14 7.49995C14 7.61181 13.9694 7.72163 13.9115 7.81793C13.8535 7.91423 13.7703 7.9935 13.6706 8.04745L0.943104 14.9225C0.849144 14.9733 0.743633 15 0.636373 15Z" fill="#FCFCFC"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="aside__content-up-body">
+                    <ul class="aside__content-up-body-list">
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event1.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">American football</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event2.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Buscetball</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event3.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Tennis</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event4.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Bascetball</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event5.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Bowling</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event6.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Box</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event7.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Football</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event8.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Golf</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event9.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Golf Club</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event10.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Skateboard</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event11.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Table tennis</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event12.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Tennis racket</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="aside__content-up-body-list-link">
+                                <img src="img/event13.png" alt="icon">
+                                <p class="aside__content-up-body-list-link-text text">Volleyball</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aside__content-down">
+                <div class="aside__content-down-header">
+                    <p>casino</p>
+                </div>
+                <div class="aside__content-down-body">
+                    <ul class="aside__content-down-body-list">
+                        <li>
+                            <a href=""  class="aside__content-down-body-link">
+                                <img src="img/casino1.webp" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="aside__content-down-body-link">
+                                <img src="img/casino2.webp" alt="img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="aside__content-down-body-link">
+                                <img src="img/casino3.webp" alt="img" width="120" height="130">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="aside__content-down-body-link">
+                                <img src="img/casino4.webp" alt="img" width="120" height="130">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="aside__content-down-body-link">
+                                <img src="img/casino5.webp" alt="img" width="120" height="130">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="aside__content-down-body-link">
+                                <img src="img/casino6.webp" alt="img" width="120" height="130">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </aside>
+
+        <img src="img/blur.webp" alt="blur"  class="main__blur main__blur--1">
+        <img src="img/blur.webp" alt="blur"  class="main__blur main__blur--2">
+        <img src="img/blur.webp" alt="blur"  class="main__blur main__blur--3">
+
+        <button class="modal1__button">
+            <span>
+                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.636373 15C0.467596 15 0.305732 14.9342 0.186389 14.8169C0.0670463 14.6997 0 14.5408 0 14.375V0.624898C1.89327e-05 0.51629 0.0288536 0.409562 0.0836619 0.315233C0.13847 0.220904 0.21736 0.14223 0.312556 0.0869651C0.407753 0.0317006 0.515969 0.00175304 0.626538 7.46521e-05C0.737108 -0.00160373 0.846215 0.025045 0.943104 0.0773938L13.6706 6.95244C13.7703 7.0064 13.8535 7.08566 13.9115 7.18197C13.9694 7.27827 14 7.38808 14 7.49995C14 7.61181 13.9694 7.72163 13.9115 7.81793C13.8535 7.91423 13.7703 7.9935 13.6706 8.04745L0.943104 14.9225C0.849144 14.9733 0.743633 15 0.636373 15Z" fill="#F04C44"/>
+                </svg>
+            </span>
+        </button>
+        <button class="modal2__button">Casino</button>
+
+    </main>
+
+    <div class="burger">
+        <ul class="header__nav-list">
+            <li>
+                <a href="#" class="header__nav-link">
+                    <img src="img/nav-icon1.svg" alt="nav icon">
+                    Bonuses
+                </a>
+            </li>
+            <li> 
+                <a href="#" class="header__nav-link">
+                <img src="img/nav-icon2.svg" alt="nav icon">
+                APP
+                </a>
+            </li>
+            <li>
+                <a href="#" class="header__nav-link">
+                    LIVE
+                </a>
+            </li>
+            <li>
+                <a href="#" class="header__nav-link">
+                    SPORTS
+                </a>
+            </li>
+            <li>
+                <a href="#" class="header__nav-link">
+                    MORE
+                </a>
+            </li>
+        </ul>
+        <div class="burger__btns">
+            <button class="header__button header__button--orange burger__btn">
+                Sign up
+            </button>
+            <button class="header__button header__button--green burger__btn">
+                log in
+            </button>
+        </div>
+    </div>
+    <div class="modal1">
+        <button class="modal1__close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 15" stroke="black" stroke-width="2"/>
+                <path d="M15 1L1 15" stroke="black" stroke-width="2"/>
+            </svg>
+          </button>
+        <ul class="aside__content-up-body-list">
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event1.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">American football</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event2.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Buscetball</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event3.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Tennis</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event4.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Bascetball</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event5.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Bowling</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event6.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Box</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event7.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Football</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event8.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Golf</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event9.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Golf Club</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event10.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Skateboard</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event11.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Table tennis</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event12.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Tennis racket</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="aside__content-up-body-list-link">
+                    <img src="img/event13.png" alt="icon">
+                    <p class="aside__content-up-body-list-link-text text">Volleyball</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+     <div class="modal2">
+        <button class="modal2__close">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L15 15" stroke="black" stroke-width="2"/>
+                <path d="M15 1L1 15" stroke="black" stroke-width="2"/>
+            </svg>
+          </button>
+        <ul class="aside__content-down-body-list">
+            <li>
+                <a href=""  class="aside__content-down-body-link">
+                    <img src="img/casino1.webp" alt="img">
+                </a>
+            </li>
+            <li>
+                <a href="" class="aside__content-down-body-link">
+                    <img src="img/casino2.webp" alt="img">
+                </a>
+            </li>
+            <li>
+                <a href="" class="aside__content-down-body-link">
+                    <img src="img/casino3.webp" alt="img" width="120" height="130">
+                </a>
+            </li>
+            <li>
+                <a href="" class="aside__content-down-body-link">
+                    <img src="img/casino4.webp" alt="img" width="120" height="130">
+                </a>
+            </li>
+            <li>
+                <a href="" class="aside__content-down-body-link">
+                    <img src="img/casino5.webp" alt="img" width="120" height="130">
+                </a>
+            </li>
+            <li>
+                <a href="" class="aside__content-down-body-link">
+                    <img src="img/casino6.webp" alt="img" width="120" height="130">
+                </a>
+            </li>
+        </ul>
+     </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+    <script src="js/index.js"></script> 
+</body>
+</html>
