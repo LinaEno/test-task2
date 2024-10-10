@@ -307,6 +307,10 @@ img {
   z-index: 30;
 }
 
+.modal1__button, .modal2__button {
+  display: none;
+}
+
 .modal1 {
   position: fixed;
   top: 150px;
@@ -377,6 +381,9 @@ img {
   .sidebar {
     z-index: 15;
     width: 295px;
+  }
+  .modal1__button, .modal2__button {
+    display: flex;
   }
 }
 @media screen and (max-width: 768px) {
