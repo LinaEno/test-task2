@@ -66,6 +66,7 @@ img {
   gap: 20px;
   padding-top: 100px;
   position: relative;
+  overflow: hidden;
 }
 .main__blur {
   position: absolute;

@@ -66,6 +66,7 @@ html {
   gap: 20px;
   padding-top: 100px;
   position: relative;
+  overflow: hidden;
   &__blur {
     position: absolute;
     width: 2114px;
