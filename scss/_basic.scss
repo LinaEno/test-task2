@@ -120,6 +120,7 @@ html {
 .section {
   background-color: $white;
   border-radius: 6px;
+  overflow: hidden;
 }
 .button {
   display: flex;
