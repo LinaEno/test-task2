@@ -500,7 +500,7 @@ img {
   align-items: center;
   gap: 28px;
 }
-.header__logo {
+.header__box a {
   padding: 14.5px 32px;
   display: flex;
   align-items: center;
@@ -512,15 +512,15 @@ img {
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
-.header__logo:hover {
+.header__box a:hover {
   background-color: #80BEF8;
 }
-.header__nav-list {
+.header__nav {
   display: flex;
   align-items: center;
   gap: 21px;
 }
-.header__nav-link {
+.header__nav a {
   color: #FCFCFC;
   font-size: 16px;
   line-height: 20.5px;
@@ -533,7 +533,7 @@ img {
   border-radius: 16px;
   transition: all 0.3s ease;
 }
-.header__nav-link:hover {
+.header__nav a:hover {
   background-color: #80BEF8;
 }
 .header__button {
