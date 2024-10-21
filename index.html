@@ -20,48 +20,58 @@
 <body>
     <header class="header">
             <div class="header__container">
-                <div class="header__box">
-                    <a href="index.html" >
-                        LOGO
-                    </a>
-                    <nav class="header__nav">
-                        <a href="#">
-                            <img src="img/nav-icon1.svg" alt="nav icon">
-                            Bonuses
-                        </a>
-                        <a href="#">
-                            <img src="img/nav-icon2.svg" alt="nav icon">
-                            APP
-                        </a>
-                        <a href="#">
-                            LIVE
-                        </a>
-                        <a href="#">
-                            SPORTS
-                        </a>
-                        <a href="#">
-                            MORE
-                        </a>
-                    </nav>
-                </div>
+                <a href="index.html" class="header__logo">
+                    LOGO
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li>
+                            <a href="#">
+                                <img src="img/nav-icon1.svg" alt="nav icon">
+                                Bonuses
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="#">
+                                <img src="img/nav-icon2.svg" alt="nav icon">
+                                APP
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                LIVE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SPORTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MORE
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header__actions">
                     <div class="header__lang-switcher">
                         <div class="header__selected-language">
-                            <img src="img/flag.png" alt="flag"  width="24">
+                            <img src="img/flag.png" alt="flag" width="24">
                             <span class="header__language-name">AT</span>
-                            <img src="img/arrow-down.svg" alt="arrow" width="24" >
                         </div>
-                        <div class="header__language-options hidden">
-                            <div class="header__language-option">
-                                <img src="img/flag.png" alt="flag"  width="24">
+                        <ul class="header__language-options hidden">
+                            <li class="header__language-option">
+                                <img src="img/flag.png" alt="flag" width="24">
                                 <span class="text">EN</span>
-                            </div>
-                            <div class="header__language-option">
-                                <img src="img/flag.png" alt="flag"  width="24">
+                            </li>
+                            <li class="header__language-option">
+                                <img src="img/flag.png" alt="flag" width="24">
                                 <span class="text">UA</span>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
+                    
                     <a href="#" class="header__button header__button--orange dn-btn">
                         Sign up
                     </a>
@@ -73,6 +83,7 @@
                         <span class="header__burger-line"></span>
                         <span class="header__burger-line"></span>
                     </button>
+
                 </div>
             </div>
     </header>

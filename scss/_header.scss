@@ -8,7 +8,6 @@
     padding: 16px 0;
     &__container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         max-width: 1240px;
         margin: 0 auto;
@@ -17,28 +16,30 @@
         display: flex;
         align-items: center;
         gap: 28px;
-        & a {
-            padding: 14.5px 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $white;
-            background-color: $logo-bg;
-            font-size: 20px;
-            line-height: 25.6px;
-            text-transform: uppercase;   
-            transition: all 0.3s ease;
-            &:hover {
-                background-color: $blue;
-            }     
-        }
     }
 
-    &__nav {
+    &__logo {
+        padding: 14.5px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        background-color: $logo-bg;
+        font-size: 20px;
+        line-height: 25.6px;
+        text-transform: uppercase;
+        margin-right: 28px;   
+        transition: all 0.3s ease;
+        &:hover {
+            background-color: $blue;
+        }     
+    }
+    &__nav-list {
         display: flex;
         align-items: center;
         gap: 21px;
-        & a {
+        margin-right: 50px;
+        & li a {
             color: $link;
             font-size: 16px;
             line-height: 20.5px;
@@ -88,6 +89,7 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        margin-left: auto;
     }
 
     &__lang-switcher {
@@ -101,6 +103,7 @@
         padding: 12px 24px;
         background-color: $link-bg;
         border-radius: 16px;
+        width: 135px;
         transition: all 0.3s ease;
         &:hover {
             background-color: $blue;
@@ -117,9 +120,23 @@
         line-height: 20.5px;
         font-weight: 600;
         color: $white;
+        position: relative;
+        &::after {
+            content: '';
+            display: inline-flex;
+            margin-left: 4px;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            top: -2px;
+            background-image: url('../img/arrow-down.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease;
+        }
     }
 
-    &__lang-switcher.active img[alt="arrow"] {
+    &__lang-switcher.active .header__language-name::after {
         transform: rotate(180deg);
     }
 
@@ -140,18 +157,21 @@
         &.hidden {
             display: none;
         }
+        & li {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            color: $text;
+         }
     }
-    &__language-option {
-       display: flex;
-       flex-direction: row;
-       gap: 8px;
-       color: $text;
-    }
+
     &__burger {
         display: none;
     }
 
 }
+
+
 
 .burger {
     display: flex;
@@ -176,6 +196,9 @@
 
 
 @media screen and (max-width: 1250px) {
+    .burger__btns {
+        display: none;
+    }
     .header {
         &__container {
             padding: 0 16px;
@@ -243,6 +266,8 @@
     }
     .burger__btn {
         width: 100%;
+        display: flex;
+        justify-content: center;
     }
     .burger {
         height: 500px;

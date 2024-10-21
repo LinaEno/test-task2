@@ -490,7 +490,6 @@ img {
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1240px;
   margin: 0 auto;
@@ -500,7 +499,7 @@ img {
   align-items: center;
   gap: 28px;
 }
-.header__box a {
+.header__logo {
   padding: 14.5px 32px;
   display: flex;
   align-items: center;
@@ -510,17 +509,19 @@ img {
   font-size: 20px;
   line-height: 25.6px;
   text-transform: uppercase;
+  margin-right: 28px;
   transition: all 0.3s ease;
 }
-.header__box a:hover {
+.header__logo:hover {
   background-color: #80BEF8;
 }
-.header__nav {
+.header__nav-list {
   display: flex;
   align-items: center;
   gap: 21px;
+  margin-right: 50px;
 }
-.header__nav a {
+.header__nav-list li a {
   color: #FCFCFC;
   font-size: 16px;
   line-height: 20.5px;
@@ -533,7 +534,7 @@ img {
   border-radius: 16px;
   transition: all 0.3s ease;
 }
-.header__nav a:hover {
+.header__nav-list li a:hover {
   background-color: #80BEF8;
 }
 .header__button {
@@ -566,6 +567,7 @@ img {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-left: auto;
 }
 .header__lang-switcher {
   position: relative;
@@ -577,6 +579,7 @@ img {
   padding: 12px 24px;
   background-color: #1A3769;
   border-radius: 16px;
+  width: 135px;
   transition: all 0.3s ease;
 }
 .header__selected-language:hover {
@@ -592,8 +595,22 @@ img {
   line-height: 20.5px;
   font-weight: 600;
   color: #FFFFFF;
+  position: relative;
 }
-.header__lang-switcher.active img[alt=arrow] {
+.header__language-name::after {
+  content: "";
+  display: inline-flex;
+  margin-left: 4px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -2px;
+  background-image: url("../img/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+.header__lang-switcher.active .header__language-name::after {
   transform: rotate(180deg);
 }
 .header__language-options {
@@ -614,7 +631,7 @@ img {
 .header__language-options.hidden {
   display: none;
 }
-.header__language-option {
+.header__language-options li {
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -644,6 +661,9 @@ img {
 }
 
 @media screen and (max-width: 1250px) {
+  .burger__btns {
+    display: none;
+  }
   .header__container {
     padding: 0 16px;
   }
@@ -703,6 +723,8 @@ img {
   }
   .burger__btn {
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .burger {
     height: 500px;
