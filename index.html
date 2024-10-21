@@ -74,12 +74,12 @@
                             </div>
                         </div>
                     </div>
-                    <button class="header__button header__button--orange dn-btn">
+                    <a href="#" class="header__button header__button--orange dn-btn">
                         Sign up
-                    </button>
-                    <button class="header__button header__button--green dn-btn">
+                    </a>
+                    <a href="#" class="header__button header__button--green dn-btn">
                         log in
-                    </button>
+                    </a>
                     <button class="header__burger">
                         <span class="header__burger-line"></span>
                         <span class="header__burger-line"></span>
@@ -94,25 +94,30 @@
           <section class="mobile-app section">
             <div class="mobile-app__content">
                 <p class="mobile-app__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. </p>
-                <button class="mobile-app__button">
+                <a href="#" class="mobile-app__button">
                     <img src="img/apple-icon.svg" alt="icon" width="24">
                     <img src="img/android-icon.svg" alt="icon" width="24">
                     Mobile app
-                </button>
+                </a>
             </div>
           </section>
-          <section class="hero section">
+          <section class="hero section" itemscope itemtype="https://schema.org/Game">
+            <meta itemprop="name" content="Название игры">
             <img src="img/hero.webp" alt="bg img" class="hero__img">
-            <div class="hero__rating">
-                <p class="hero__rating-text">96/100</p>
-                <img src="img/stars.svg" alt="icon rating" class="hero__rating-icon">
+            <div class="hero__rating" itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <p class="hero__rating-text">
+                    <span itemprop="ratingValue">96</span>/100
+                </p>
+                <img src="img/stars.svg" alt="Рейтинг 5 звезд" class="hero__rating-icon" title="5 звезд">
+                <meta itemprop="bestRating" content="100">
             </div>
-            <h1 class="hero__title title">Lorem ipsum dolor sit amet, consectetur adipiscing </h1>
+            <h1 class="hero__title title">Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
             <div class="hero__action">
-                <button class="button hero__button">Sign up</button>
-                <p class="hero__text">18+ T&C apply |  Play Responsibly</p>
+                <a href="#" class="button hero__button">Sign up</a>
+                <p class="hero__text">18+ T&C apply | Play Responsibly</p>
             </div>
         </section>
+              
         <section class="tabs section">
             <ul class="tabs__list">
                 <li class="tabs__item">
@@ -179,7 +184,7 @@
             <div class="bonus__info">
                 <h2 class="bonus__title title">100% BONUS UP TO 300€</h2>
                 <p class="bonus__text">+100 free spins on your first deposit</p>
-                <button class="button">Get a bonus now</button>
+                <a href="#" class="button">Get a bonus now</a>
             </div>
         </section>
         <section class="up section">
@@ -188,36 +193,50 @@
         </section>
         <section class="rating section">
             <ul class="rating__list">
-                <li class="rating__item">
+                <li class="rating__item" itemscope itemtype="https://schema.org/Rating">
                     <p class="rating__item-text">Bonus offer</p>
                     <div class="rating__item-box">
-                        <img src="img/rait9.svg" alt="icon rating"  class="rating__item-box-img">
-                        <p  class="rating__item-box-text">9/10</p>
+                        <img src="img/rait9.svg" alt="icon rating" class="rating__item-box-img">
+                        <p class="rating__item-box-text">
+                            <span itemprop="ratingValue">9</span>/10
+                        </p>
+                        <meta itemprop="bestRating" content="10">
                     </div>
                 </li>
-                <li class="rating__item">
+                <li class="rating__item" itemscope itemtype="https://schema.org/Rating">
                     <p class="rating__item-text">BETTING VARIETY</p>
                     <div class="rating__item-box">
-                        <img src="img/rait8.svg" alt="icon rating"  class="rating__item-box-img">
-                        <p  class="rating__item-box-text">8/10</p>
+                        <img src="img/rait8.svg" alt="icon rating" class="rating__item-box-img">
+                        <p class="rating__item-box-text">
+                            <span itemprop="ratingValue">8</span>/10
+                        </p>
+                        <meta itemprop="bestRating" content="10">
                     </div>
                 </li>
-                <li class="rating__item">
+                <li class="rating__item" itemscope itemtype="https://schema.org/Rating">
                     <p class="rating__item-text">mobile experience</p>
                     <div class="rating__item-box">
-                        <img src="img/rait7.svg" alt="icon rating"  class="rating__item-box-img">
-                        <p  class="rating__item-box-text">7/10</p>
+                        <img src="img/rait7.svg" alt="icon rating" class="rating__item-box-img">
+                        <p class="rating__item-box-text">
+                            <span itemprop="ratingValue">7</span>/10
+                        </p>
+                        <meta itemprop="bestRating" content="10">
                     </div>
                 </li>
-                <li class="rating__item">
+                <li class="rating__item" itemscope itemtype="https://schema.org/Rating">
                     <p class="rating__item-text">payment options</p>
                     <div class="rating__item-box">
-                        <img src="img/rait9.svg" alt="icon rating"  class="rating__item-box-img">
-                        <p  class="rating__item-box-text">9/10</p>
+                        <img src="img/rait9.svg" alt="icon rating" class="rating__item-box-img">
+                        <p class="rating__item-box-text">
+                            <span itemprop="ratingValue">9</span>/10
+                        </p>
+                        <meta itemprop="bestRating" content="10">
                     </div>
                 </li>
             </ul>
         </section>
+        
+
         <section class="facts section">
             <h2 class="facts__title title">quick facts</h2>
             <div class="facts__list">
@@ -286,7 +305,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews section">
+        <article class="reviews section">
             <h2 class="reviews__title title-big">SPORTSBOOK REVIEW</h2>
             <p class="reviews__text text reviews__text--mbm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
             <p class="reviews__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
@@ -318,8 +337,8 @@
                 </li>
             </ol>
             <p class="reviews__text text reviews__text--mbl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
-            <button class="header__button header__button--orange">Sign up</button>
-        </section>
+            <a href="#" class="header__button header__button--orange">Sign up</a>
+        </article>
         <section class="slider section">
             <h2 class="slider__title title">what other players have to say</h2>
             <div class="swiper swiper-review">
@@ -497,22 +516,6 @@
                 </div>
             </div>
         </section>
-        <footer class="footer section">
-            <div class="footer__container">
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
-                <img src="img/footer-img.webp" alt="footer img" class="footer__container-img" width="85" height="85">
-            </div>
-            <p class="text">Gambling can be addictive. Play responsibly.</p>
-            <div class="footer__logo">
-                <a href="index.html" class="footer__logo-small">
-                    LOGO
-                </a>
-                <a href="index.html" class="footer__logo-small footer__logo-big">
-                    LOGO
-                </a>
-    
-            </div>
-        </footer>
         </div>
         <aside class="sidebar">
           <div class="aside__content">
@@ -669,6 +672,24 @@
         <button class="modal2__button">Casino</button>
 
     </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__container">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat egestas eget purus, in dapibus imperdiet quis eget. Curabitur semper volutpat cras elementum. Eget ultrices donec urna tellus duis ullamcorper consequat. Enim nunc neque tristique adipiscing varius sit tristique. Sit parturient eget pharetra, suspendisse. Turpis ut odio lorem sapien congue. Pulvinar id in mollis faucibus ut. Magna in neque tristi</p>
+                <img src="img/footer-img.webp" alt="footer img" class="footer__container-img" width="85" height="85">
+            </div>
+            <p class="text">Gambling can be addictive. Play responsibly.</p>
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logo-small">
+                    LOGO
+                </a>
+                <a href="index.html" class="footer__logo-small footer__logo-big">
+                    LOGO
+                </a>
+    
+            </div>
+        </div>
+    </footer>
 
     <div class="burger">
         <ul class="header__nav-list">
@@ -701,12 +722,12 @@
             </li>
         </ul>
         <div class="burger__btns">
-            <button class="header__button header__button--orange burger__btn">
+            <a href="#" class="header__button header__button--orange burger__btn">
                 Sign up
-            </button>
-            <button class="header__button header__button--green burger__btn">
+            </a>
+            <a href="#" class="header__button header__button--green burger__btn">
                 log in
-            </button>
+            </a>
         </div>
     </div>
     <div class="modal1">
