@@ -760,14 +760,15 @@ img {
 }
 .mobile-app {
   padding: 25px 20px;
-}
-.mobile-app__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
 }
-.mobile-app__button {
+.mobile-app p {
+  max-width: 666px;
+}
+.mobile-app a {
   display: inline-flex;
   align-items: center;
   gap: 7px;
@@ -781,9 +782,6 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   transition: all 0.3s ease;
-}
-.mobile-app__text {
-  max-width: 666px;
 }
 
 .hero {
@@ -918,31 +916,32 @@ img {
   object-position: center;
   border-radius: 6px;
 }
-.bonus__info {
-  position: relative;
-}
-.bonus__title {
+.bonus h2 {
   color: #192A32;
   margin-bottom: 16px;
   position: relative;
 }
-.bonus__text {
+.bonus p {
   font-size: 32px;
   line-height: 38.4px;
   font-weight: 700;
   color: #192A32;
   max-width: 494px;
   margin-bottom: 16px;
+  position: relative;
+}
+.bonus a {
+  position: relative;
 }
 
 .up {
   padding: 32px 20px;
 }
-.up__title {
+.up h2 {
   color: #192A32;
   margin-bottom: 16px;
 }
-.up__text {
+.up p {
   color: #192A32;
 }
 
@@ -985,7 +984,7 @@ img {
 .facts {
   padding: 32px 55px 24px 20px;
 }
-.facts__title {
+.facts h2 {
   color: #192A32;
   margin-bottom: 18px;
   text-transform: uppercase;
@@ -993,7 +992,7 @@ img {
   position: relative;
   max-width: 269px;
 }
-.facts__title::after {
+.facts h2::after {
   content: "";
   display: block;
   width: 100%;
@@ -1031,7 +1030,7 @@ img {
 .reviews {
   padding: 32px 20px;
 }
-.reviews__title {
+.reviews h2 {
   color: #192A32;
   margin-bottom: 24px;
   text-transform: uppercase;
@@ -1045,23 +1044,23 @@ img {
 .reviews__text--mbl {
   margin-bottom: 32px;
 }
-.reviews__subtitle {
+.reviews h3 {
   color: #192A32;
   margin-bottom: 24px;
   margin-top: 40px;
   text-transform: uppercase;
 }
-.reviews__mark-list {
+.reviews ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
   margin-bottom: 24px;
 }
-.reviews__mark-list-item {
+.reviews ul li {
   position: relative;
   padding-left: 31px;
 }
-.reviews__mark-list-item::before {
+.reviews ul li::before {
   content: "-";
   width: 23px;
   height: 24px;
@@ -1071,18 +1070,18 @@ img {
   position: absolute;
   left: 0;
 }
-.reviews__number-list {
+.reviews ol {
   display: flex;
   flex-direction: column;
   counter-reset: custom-counter;
   gap: 24px;
   margin-bottom: 24px;
 }
-.reviews__number-list-item {
+.reviews ol li {
   position: relative;
   padding-left: 31px;
 }
-.reviews__number-list-item::before {
+.reviews ol li::before {
   content: counter(custom-counter);
   counter-increment: custom-counter;
   width: 23px;
@@ -1100,7 +1099,7 @@ img {
 .faq {
   padding: 30px 20px;
 }
-.faq__title {
+.faq h2 {
   color: #192A32;
   margin-bottom: 32px;
   margin-left: 7px;
@@ -1122,13 +1121,14 @@ img {
   right: 0;
   border-radius: 6px;
 }
-.support__content {
-  position: relative;
-}
-.support__title {
+.support h2 {
   color: #192A32;
   margin-bottom: 24px;
   text-transform: uppercase;
+  position: relative;
+}
+.support p {
+  position: relative;
 }
 .support__btns {
   display: flex;
@@ -1136,6 +1136,7 @@ img {
   gap: 16px;
   margin-bottom: 35px;
   margin-top: 24px;
+  position: relative;
 }
 .support__btn {
   display: flex;
@@ -1160,6 +1161,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
 }
 .support__info-item {
   display: flex;
@@ -1189,7 +1191,7 @@ img {
   padding: 20px 20px 26px;
   overflow: hidden;
 }
-.slider__title {
+.slider h2 {
   color: #192A32;
   margin-bottom: -46px;
   text-transform: uppercase;
@@ -1234,7 +1236,7 @@ img {
   .tabs__list {
     justify-content: center;
   }
-  .mobile-app__content {
+  .mobile-app {
     padding-right: 60px;
   }
 }
@@ -1242,7 +1244,7 @@ img {
   .tabs__list {
     flex-wrap: wrap;
   }
-  .slider__title {
+  .slider h2 {
     max-width: 453px;
   }
 }
@@ -1254,7 +1256,7 @@ img {
   .rating__item-text {
     font-size: 14px;
   }
-  .facts__title {
+  .facts h2 {
     margin-left: 0px;
     max-width: max-content;
   }
@@ -1267,23 +1269,21 @@ img {
     font-size: 14px;
     line-height: 20px;
   }
-  .slider__title {
+  .slider h2 {
     max-width: 415px;
+    margin-bottom: 14px;
   }
-  .faq__title {
+  .faq h2 {
     margin-left: 0px;
   }
-  .bonus__text {
+  .bonus p {
     font-size: 22px;
     line-height: 28px;
     max-width: 358px;
   }
-  .slider__title {
-    margin-bottom: 14px;
-  }
 }
 @media screen and (max-width: 600px) {
-  .mobile-app__content {
+  .mobile-app {
     flex-direction: column;
     gap: 20px;
   }
@@ -1315,7 +1315,7 @@ img {
   .hero__action {
     max-width: 100%;
   }
-  .bonus__text {
+  .bonus p {
     font-size: 20px;
     line-height: 26px;
     max-width: 225px;
@@ -1341,7 +1341,7 @@ img {
     min-width: 137px;
     max-width: 137px;
   }
-  .faq__title {
+  .faq h2 {
     margin-bottom: 14px;
   }
   .slider__slide {
@@ -1374,17 +1374,17 @@ img {
     padding: 4px 0;
     align-items: flex-start;
   }
-  .support__title {
+  .support h2 {
     color: #192A32;
     margin-bottom: 16px;
   }
   .bonus__img {
     display: none;
   }
-  .mobile-app__text {
+  .mobile-app p {
     padding-right: 70px;
   }
-  .mobile-app__content {
+  .mobile-app {
     padding-right: 0;
   }
 }
